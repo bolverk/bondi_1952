@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     28130,        870]
-NotebookOptionsPosition[     25757,        790]
-NotebookOutlinePosition[     26134,        806]
-CellTagsIndexPosition[     26091,        803]
+NotebookDataLength[     40973,       1254]
+NotebookOptionsPosition[     37633,       1143]
+NotebookOutlinePosition[     38010,       1159]
+CellTagsIndexPosition[     37967,       1156]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -786,7 +786,360 @@ ButtonNote -> \\\"Solve::ifun\\\"]\\)\"\>"}]], "Message", "MSG",
 
 Cell[BoxData["True"], "Output",
  CellChangeTimes->{{3.669430429945711*^9, 3.669430493330798*^9}}]
-}, Open  ]]
+}, Open  ]],
+
+Cell["Minimum of f[u]", "Text",
+ CellChangeTimes->{{3.6694305474998145`*^9, 3.669430552741305*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"eqn\[LetterSpace]16", "[", 
+   RowBox[{"[", "3", "]"}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   SubscriptBox["\[PartialD]", "u"], "%"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Solve", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Simplify", "[", "%", "]"}], "\[Equal]", "0"}], ",", "u"}], 
+   "]"}], "[", 
+  RowBox[{"[", "1", "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"f\[LetterSpace]min", "=", 
+  RowBox[{"Together", "[", 
+   RowBox[{
+    RowBox[{"eqn\[LetterSpace]16", "[", 
+     RowBox[{"[", "3", "]"}], "]"}], "/.", "%"}], "]"}]}]}], "Input",
+ CellChangeTimes->{{3.6694305571287203`*^9, 3.669430585245045*^9}, {
+  3.6694306209943385`*^9, 3.6694306518723574`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"u", "\[Rule]", "1"}], "}"}]], "Output",
+ CellChangeTimes->{{3.669430559794088*^9, 3.6694305854847937`*^9}, {
+  3.669430635826784*^9, 3.6694306532104483`*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"1", "+", "\[Gamma]"}], 
+  RowBox[{"2", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"-", "1"}], "+", "\[Gamma]"}], ")"}]}]]], "Output",
+ CellChangeTimes->{{3.669430559794088*^9, 3.6694305854847937`*^9}, {
+  3.669430635826784*^9, 3.669430653213455*^9}}]
+}, Open  ]],
+
+Cell["Minimum of g", "Text",
+ CellChangeTimes->{{3.6694306681825495`*^9, 3.6694306734126863`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"eqn\[LetterSpace]17", "[", 
+   RowBox[{"[", "3", "]"}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   SubscriptBox["\[PartialD]", "x"], "%"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Simplify", "[", "%", "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Solve", "[", 
+   RowBox[{
+    RowBox[{"%", "\[Equal]", "0"}], ",", "x"}], "]"}], "[", 
+  RowBox[{"[", "1", "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"eqn\[LetterSpace]17", "[", 
+    RowBox[{"[", "3", "]"}], "]"}], "/.", "%"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"g\[LetterSpace]min", "=", 
+  RowBox[{"Simplify", "[", "%", "]"}]}]}], "Input",
+ CellChangeTimes->{{3.6694306787911673`*^9, 3.6694307333845167`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"x", "\[Rule]", 
+   RowBox[{
+    FractionBox["1", "4"], " ", 
+    RowBox[{"(", 
+     RowBox[{"5", "-", 
+      RowBox[{"3", " ", "\[Gamma]"}]}], ")"}]}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.669430682237667*^9, 3.6694307338315687`*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   SuperscriptBox["4", 
+    FractionBox[
+     RowBox[{"4", "-", 
+      RowBox[{"4", " ", "\[Gamma]"}]}], 
+     RowBox[{"1", "+", "\[Gamma]"}]]], " ", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{"5", "-", 
+      RowBox[{"3", " ", "\[Gamma]"}]}], ")"}], 
+    FractionBox[
+     RowBox[{
+      RowBox[{"-", "5"}], "+", 
+      RowBox[{"3", " ", "\[Gamma]"}]}], 
+     RowBox[{"1", "+", "\[Gamma]"}]]], " ", 
+   RowBox[{"(", 
+    RowBox[{"1", "+", "\[Gamma]"}], ")"}]}], 
+  RowBox[{
+   RowBox[{"-", "1"}], "+", "\[Gamma]"}]]], "Output",
+ CellChangeTimes->{{3.669430682237667*^9, 3.669430733834577*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"1", "==", 
+   FractionBox["g\[LetterSpace]min", 
+    RowBox[{
+     FractionBox["1", "4"], "*", 
+     FractionBox[
+      RowBox[{"\[Gamma]", "+", "1"}], 
+      RowBox[{"\[Gamma]", "-", "1"}]], 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox["1", "4"], 
+        RowBox[{"(", 
+         RowBox[{"5", "-", 
+          RowBox[{"3", "\[Gamma]"}]}], ")"}]}], ")"}], 
+      RowBox[{
+       RowBox[{"-", 
+        RowBox[{"(", 
+         RowBox[{"5", "-", 
+          RowBox[{"3", "\[Gamma]"}]}], ")"}]}], "/", 
+       RowBox[{"(", 
+        RowBox[{"\[Gamma]", "+", "1"}], ")"}]}]]}]]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Simplify", "[", "%", "]"}]}], "Input",
+ CellChangeTimes->{{3.6694307420306106`*^9, 3.66943078590796*^9}}],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{{3.669430774159771*^9, 3.6694307861694937`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"eqn\[LetterSpace]15", ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Lambda]", "/.", 
+   RowBox[{
+    RowBox[{"Solve", "[", 
+     RowBox[{"%", ",", "\[Lambda]"}], "]"}], "[", 
+    RowBox[{"[", "1", "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"%", " ", "/.", " ", 
+   RowBox[{
+    RowBox[{"f", "[", "u", "]"}], "\[Rule]", "f\[LetterSpace]min"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"%", " ", "/.", " ", 
+   RowBox[{
+    RowBox[{"g", "[", "x", "]"}], "\[Rule]", "g\[LetterSpace]min"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"PowerExpand", "[", "%", "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Simplify", "[", "%", "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"eqn\[LetterSpace]18", "=", 
+   RowBox[{"\[Lambda]\[LetterSpace]c", "==", "%"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.669430863820816*^9, 3.66943091883539*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Solve", "::", "ifun"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Inverse functions are being used by \
+\[NoBreak]\\!\\(\\*RowBox[{\\\"Solve\\\"}]\\)\[NoBreak], so some solutions \
+may not be found; use Reduce for complete solution information. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/Solve/ifun\\\", \
+ButtonNote -> \\\"Solve::ifun\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.669430870382415*^9, 3.6694309194325914`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"eqn\[LetterSpace]18\[LetterSpace]orig", "=", 
+   RowBox[{"\[Lambda]\[LetterSpace]c", "==", 
+    RowBox[{
+     SuperscriptBox[
+      RowBox[{"(", 
+       FractionBox["1", "2"], ")"}], 
+      FractionBox[
+       RowBox[{"(", 
+        RowBox[{"\[Gamma]", "+", "1"}], ")"}], 
+       RowBox[{"2", 
+        RowBox[{"(", 
+         RowBox[{"\[Gamma]", "-", "1"}], ")"}]}]]], 
+     SuperscriptBox[
+      RowBox[{"(", 
+       FractionBox[
+        RowBox[{"5", "-", 
+         RowBox[{"3", "\[Gamma]"}]}], "4"], ")"}], 
+      RowBox[{"-", 
+       FractionBox[
+        RowBox[{"5", "-", 
+         RowBox[{"3", "\[Gamma]"}]}], 
+        RowBox[{"2", 
+         RowBox[{"(", 
+          RowBox[{"\[Gamma]", "-", "1"}], ")"}]}]]}]]}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"%", "/.", 
+   RowBox[{
+    RowBox[{"Solve", "[", 
+     RowBox[{"eqn\[LetterSpace]18", ",", "\[Lambda]\[LetterSpace]c"}], "]"}], 
+    "[", 
+    RowBox[{"[", "1", "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Simplify", "[", "%", "]"}]}], "Input",
+ CellChangeTimes->{{3.6694309228273335`*^9, 3.66943098961997*^9}}],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{{3.6694309738034077`*^9, 3.669430989859661*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{"eqn\[LetterSpace]18", "[", 
+    RowBox[{"[", "2", "]"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\[Gamma]", ",", "1", ",", "2"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.6694310229443665`*^9, 3.669431034228168*^9}}],
+
+Cell[BoxData[
+ GraphicsBox[{{}, {}, 
+   {RGBColor[0.368417, 0.506779, 0.709798], AbsoluteThickness[1.6], Opacity[
+    1.], LineBox[CompressedData["
+1:eJwVy3881HcAx/E7jzRJVzZ3hrbFEeqQcWJHb1GNkBJjFsoRNg/9INouK5xQ
+6MfSRB5ilaVZW9IPsz2asqZpfb93N2QPMuXYOfp+D4dPxeyP1+P119M6fk9Y
+ogGHw9k03/933/uFIYfDwDdnXx9GWXxqp69az2VwbX+ivH6ERU3PPo88AwZu
+/BgnvoYFb2NK0kJDBiOrvI5r1CyGLaLaTYwZbOJXZpb1s6i8Jy6xMGNgsP3m
+Yq2ShYE5a+bmwEBUfF90vpkF/XOS7e6tDLiPisVGhSyqg43zT9QxSEhWOH5l
+yUJ+1usD3TQDG0/GsvoGA/ffG3xaAljckm95f3De8SVduYHVLITLKqK07S+w
+JKVk+TKGhVNz65ya8wJru6enzn2oQ3uJvj3HfgyrXa5YH6/SwbW1ZWNu2Cg8
+1qurm0Z16JC8beZSrMX+M91x32wYR7ev3z1Z0wjaaiMzHpaNY4LVp0SNajBQ
+btUVNTgOLe+wUbyjBq7UGVm9ZALDM03XSfi/+Lq1IkNcPIG9C7ZZMqXDcNZH
+XMt7NoGtkSm+O24P4aTpR55eXpM4ZNNceGtQjUXDA3yHokkkBPEsXa3VaJyz
+Ffc8ncTYFgdBd9AgMhTj37at0UMXq7qaJH+OJHVWbEahHi+M6gc7rj6D7YBv
+/LE+PcwcyVha5wCmy882P3Gews7vQ3MLeAN4fbImXJs/BaXU/Xmp+z+w2ODl
+79k1hQdJTihM6sdcH//IyMpp0Ld9bsR4PYX5T3Wzu7KnETkaUE7LerEp7Dfa
+9M9p4GDq5Oa//sblVRVqud0MHqf28Ldxe0BrrgfGyWaw5/wrt3z7bry1O4qb
+/scMNLEeW9KjO3HUppEE2hCY3byQ3OuvQsJdjaRUSOCztHL5dxIV/GJtshW2
+BGO1nwiy3FSYPXdqLtqeoFdSUs8VqpBlundBqojA//RZ3RBXhWSOE6/Ug+CE
+1G5S+4sSQX2XrRWbCUzKhLWJYiVWHeqLFwQTCHZxQ6pFShhZCi5GhxC0vft4
+oVKoxP2I/JXPQgmsS5u8Hd5UwvuRdPVE+Lw3fnnu6JgCzi0rxII4gnxpgc/U
+JQWWVVQERKcTLG16p0jOU6AkaLF9eQZBrq2MM7xAAePXMsPOAwQ9lXaLfF/S
+MNwZ07rtIMGXId7ZHUM0iN0K78BsggbnnFvBd2kM/njJxbOAwN1cvjQ/jUa8
+VMDLLCRQvefkPyul0W9WoG0sIkjITX0o/ZhGT1byFZdiAlJYG8z406B8Vgvt
+TxHUqQ6PsuY0mtt/EAgqCbJndkj8mimslVlPbj9P8Nksa97ZQOGG6LTyVBUB
+oxOGimsoXDuRfnLJBYLAOwnZ6wooiNY/TwuqIZA3XIh/8jmFel14SFEtQd6B
+oeQVqRQuRngYG14iCIiTtRwIpWDzRt2w32UCq31N6nBfCtW3zR8cqSP4dZ1p
+WeYaChVWM3mvrhA4TYWL7phQiMhwTa+sJ0gUllXt4VL4D/w4LkI=
+     "]]}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->{True, True},
+  AxesLabel->{None, None},
+  AxesOrigin->{1., 0.25},
+  DisplayFunction->Identity,
+  Frame->{{False, False}, {False, False}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  Method->{
+   "DefaultBoundaryStyle" -> Automatic, "DefaultMeshStyle" -> 
+    AbsolutePointSize[6], "ScalingFunctions" -> None},
+  PlotRange->{{1, 2}, {0.2500876463787363, 1.1204222382730933`}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.05], 
+     Scaled[0.05]}},
+  Ticks->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{3.669431034474674*^9}]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{"eqn\[LetterSpace]9", ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"%", " ", "/.", 
+   RowBox[{"y", "\[Rule]", "0"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Simplify", "[", "%", "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   SuperscriptBox["z", 
+    RowBox[{"\[Gamma]", "-", "1"}]], "/.", 
+   RowBox[{
+    RowBox[{"Solve", "[", 
+     RowBox[{"%", ",", "z"}], "]"}], "[", 
+    RowBox[{"[", "1", "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"PowerExpand", "[", "%", "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"eqn\[LetterSpace]20", "=", 
+   RowBox[{
+    SuperscriptBox["z", 
+     RowBox[{"\[Gamma]", "-", "1"}]], "==", 
+    RowBox[{"Collect", "[", 
+     RowBox[{"%", ",", "x"}], "]"}]}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.6694345603630605`*^9, 3.669434656418047*^9}}],
+
+Cell[BoxData[{
+ RowBox[{"eqn\[LetterSpace]9", ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"Limit", "[", 
+    RowBox[{
+     RowBox[{"%", "[", 
+      RowBox[{"[", "1", "]"}], "]"}], ",", 
+     RowBox[{"\[Gamma]", "\[Rule]", " ", "1"}]}], "]"}], "\[Equal]", 
+   RowBox[{"%", "[", 
+    RowBox[{"[", "2", "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"eqn\[LetterSpace]9t", "=", "%"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.6694347117536545`*^9, 3.669434788683673*^9}, 
+   3.6694351447093935`*^9}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"{", 
+   RowBox[{"eqn\[LetterSpace]8", ",", "eqn\[LetterSpace]9t"}], "}"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"%", "[", 
+    RowBox[{"[", "2", "]"}], "]"}], "/.", 
+   RowBox[{
+    RowBox[{"Solve", "[", 
+     RowBox[{
+      RowBox[{"%", "[", 
+       RowBox[{"[", "1", "]"}], "]"}], ",", "z"}], "]"}], "[", 
+    RowBox[{"[", "1", "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"PowerExpand", "[", "%", "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"eqn\[LetterSpace]14t", "=", "%"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.6694350264751787`*^9, 3.6694351425957565`*^9}}]
 },
 WindowSize->{759, 553},
 WindowMargins->{{Automatic, 252}, {24, Automatic}},
@@ -870,8 +1223,39 @@ Cell[23922, 740, 96, 1, 33, "Output"]
 Cell[CellGroupData[{
 Cell[24055, 746, 1003, 25, 133, "Input"],
 Cell[25061, 773, 580, 11, 43, "Message"],
-Cell[25644, 786, 97, 1, 66, "Output"]
-}, Open  ]]
+Cell[25644, 786, 97, 1, 33, "Output"]
+}, Open  ]],
+Cell[25756, 790, 99, 1, 32, "Text"],
+Cell[CellGroupData[{
+Cell[25880, 795, 742, 20, 93, "Input"],
+Cell[26625, 817, 198, 4, 33, "Output"],
+Cell[26826, 823, 295, 8, 51, "Output"]
+}, Open  ]],
+Cell[27136, 834, 98, 1, 32, "Text"],
+Cell[CellGroupData[{
+Cell[27259, 839, 771, 20, 133, "Input"],
+Cell[28033, 861, 279, 8, 48, "Output"],
+Cell[28315, 871, 641, 21, 62, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[28993, 897, 789, 25, 86, "Input"],
+Cell[29785, 924, 99, 1, 33, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[29921, 930, 943, 25, 153, "Input"],
+Cell[30867, 957, 578, 11, 43, "Message"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[31482, 973, 1134, 35, 103, "Input"],
+Cell[32619, 1010, 99, 1, 33, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[32755, 1016, 286, 7, 32, "Input"],
+Cell[33044, 1025, 2492, 52, 260, "Output"]
+}, Open  ]],
+Cell[35551, 1080, 870, 24, 133, "Input"],
+Cell[36424, 1106, 534, 14, 130, "Input"],
+Cell[36961, 1122, 668, 19, 93, "Input"]
 }
 ]
 *)
